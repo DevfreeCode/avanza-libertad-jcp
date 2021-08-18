@@ -97,13 +97,13 @@ export default function Home() {
           </section>
           <section className="contact_information">
               <div className="contact_sub_information">
-                  <div className="subtitle-small">
+                  <div className="subtitle-small icons">
                   <FontAwesomeIcon icon={faPhone} />
                   11-6235-5996</div>       
-                  <div className="subtitle-small">
+                  <div className="subtitle-small icons">
                   <FontAwesomeIcon icon={faFacebook} />
                   Beto Diaz</div>  
-                  <div className="subtitle-small">
+                  <div className="subtitle-small icons">
                   <FontAwesomeIcon icon={faFacebook} />  
                   Antonio Roberto Ontiveros</div>
               </div>

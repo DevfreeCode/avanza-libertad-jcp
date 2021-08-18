@@ -205,6 +205,13 @@ a {
 
 .contact_sub_information svg {
 height: 2rem;
+margin-right: 0.5rem;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 .footer {
