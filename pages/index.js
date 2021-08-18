@@ -1,5 +1,9 @@
 import Head from 'next/head'
 import React from 'react'
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Home() {
   return (
@@ -13,6 +17,8 @@ export default function Home() {
         <meta property="og:url" content="https://avanza-libertad-jcp.vercel.app/" />
         <meta property="og:image" content="https://avanza-libertad-jcp.vercel.app/images/beto.png" />
         <meta property="og:description" content="Beto Diaz precandidato a concejal-Avanza Libertad-Soy un vecino de la localidad de José C. Paz, que al igual que todos los cuidadanos busca un cambio en el partido. Buen vecino, trabajador, humilde y voy a ser un buen representante de los paceños." />
+        <meta name="google-site-verification" content="uT2W7Kop-FNNqIIg3RcsUUQgxw1o1indaDVuqdXsZ7I" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet"></link>
       </Head>
 
     <div>
@@ -92,13 +98,13 @@ export default function Home() {
           <section className="contact_information">
               <div className="contact_sub_information">
                   <div className="subtitle-small">
-                      <i className="fas fa-phone-alt Contact_icons"></i>
+                  <FontAwesomeIcon icon={faPhone} />
                   11-6235-5996</div>       
                   <div className="subtitle-small">
-                      <i className="fab fa-facebook-square  Contact_icons"></i>
+                  <FontAwesomeIcon icon={faFacebook} />
                   Beto Diaz</div>  
                   <div className="subtitle-small">
-                      <i className="fab fa-facebook-square Contact_icons"></i>
+                  <FontAwesomeIcon icon={faFacebook} />  
                   Antonio Roberto Ontiveros</div>
               </div>
           </section>
