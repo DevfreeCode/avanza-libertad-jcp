@@ -1,65 +1,117 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+    <React.Fragment>
+
+<Head>
+        <title>Beto DIaz-Avanza Libertad</title>
+        <link rel="icon" type="ico" href="favicon.ico"/>
+        <meta name="description" content="Beto Diaz Precandidato a Consejal-Avanza Libertad-Soy un vecino de la localidad de José C. Paz, que al igual que todos los cuidadanos busca un cambio en el partido. Buen vecino, trabajador, humilde y voy a ser un buen representante de los paceños."></meta>
+        <meta property="og:type" content="website"></meta>
+        <meta property="og:url" content="https://avanza-libertad-jcp.vercel.app/" />
+        <meta property="og:image" content="https://avanza-libertad-jcp.vercel.app/images/beto.png" />
+        <meta property="og:description" content="Beto Diaz Precandidato a Consejal-Avanza Libertad-Soy un vecino de la localidad de José C. Paz, que al igual que todos los cuidadanos busca un cambio en el partido. Buen vecino, trabajador, humilde y voy a ser un buen representante de los paceños." />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+    <div>
+      <header className="header" id="header">
+          <img className="header_logo" src="images/AL-logo-pequeno.png" alt="logo"></img>
+          <ul className="header_list">
+              <li className="header_list_content">
+                  <a href="#presentation">Inicio</a> </li>
+              <li className="header_list_content">
+                  <a href="#candidatos">Candidatos</a></li>
+              <li className="header_list_content">
+                  <a href="#contact">Contacto</a></li>
+          </ul>
+      </header> 
+      <main id="presentation" className="presentation">
+          <section className="presentation_information">
+              <span className="title">Beto Diaz</span>
+              <span className="subtitle">Pre Candidato a Concejal</span>
+              <span className="subtitle">Avanza Libertad</span>
+              <span className="text">Mi nombre es Alberto pero soy conocido por todos como Beto. Soy un vecino de la localidad de José C. Paz, que al igual que todos los cuidadanos busca un cambio en el partido. Buen vecino, trabajador, humilde y voy a ser un buen representante de los paceños.</span>
+          </section>
+          <section className="presentation_img">
+              <div className="presentation_card">
+                  <img className="images" src="images/beto diaz.jpg" alt="foto de beto"></img>
+              </div>
+              </section>
       </main>
+      <section id="candidatos" className="candidatos">
+          <div className="candidatos_text">
+              <span className="title title-center title-color">También nos acompañan vecinos honestos de este municipio</span>
+          </div>
+          <div className="candidatos_container">
+              <div className="candidatos_card">
+                  <img className="img" src="images/tony.jpg" alt="tony"></img>
+                  <span className="text text-color">Antonio Ontiveros</span>
+                  <span className="text text-fonsize">Precandidato <br/> Concejal</span>
+              </div>
+              <div className="candidatos_card">
+                  <img className="img" src="images/yamila gonzalez.jpg" alt="yamila"></img>
+                  <span className="text text-color">Yamila Gonzalez</span>
+                  <span className="text text-fonsize">Precandidata <br/> Concejal</span>
+              </div>
+              <div className="candidatos_card">
+                  <img className="img" src="images/patricia graneros.jpg" alt="patricia"></img>
+                  <span className="text text-color" >Patricia Graneros</span>
+                  <span className="text text-fonsize">Precandidata <br/> Concejal</span>
+              </div>
+              <div className="candidatos_card">
+                  <img className="img" src="images/norma acuña.jpg" alt="norma"></img>
+                  <span className="text text-color">Norma Acuña</span>
+                  <span className="text text-fonsize">Precandidata <br/> Concejal</span>
+              </div>
+              <div className="candidatos_card">
+                  <img className="img" src="images/nelida beatriz perez.jpg" alt="nelida"></img>
+                  <span className="text text-color" >Nelida Perez</span>
+                  <span className="text text-fonsize">Precandidata <br/> Concejal</span>
+              </div>
+              <div className="candidatos_card">
+                  <img className="img" src="images/mario gambino.jpg" alt="mario"></img>
+                  <span className="text text-color">Mario Gambino</span>
+                  <span className="text text-fonsize">Precandidato <br/> Concejal</span>
+              </div>
+              <div className="candidatos_card">
+                  <img className="img" src="images/fernando mussare.jpg" alt="fernando"></img>
+                  <span className="text text-color">Fernando Mussare</span>
+                  <span className="text text-fonsize">Precandidato <br/> Concejal</span>
+              </div>
+          </div>
+      </section>
+      <section id="contact" className="contact">
+          <section className="contact_text">
+              <div className="contact_text_container">
+                  <span className="title title-center">Si querés ser parte de este nuevo cambio en José C. Paz</span>
+              </div>
+                  <span className="subtitle">Súmate contactandonos por</span>
+          </section>
+          <section className="contact_information">
+              <div className="contact_sub_information">
+                  <div className="subtitle-small">
+                      <i className="fas fa-phone-alt Contact_icons"></i>
+                  11-6235-5996</div>       
+                  <div className="subtitle-small">
+                      <i className="fab fa-facebook-square  Contact_icons"></i>
+                  Beto Diaz</div>  
+                  <div className="subtitle-small">
+                      <i className="fab fa-facebook-square Contact_icons"></i>
+                  Antonio Roberto Ontiveros</div>
+              </div>
+          </section>
+      </section>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+      <a href="https://api.whatsapp.com/send?phone=+5491162355996" className="btn-wsp" target="_blank">
+          <img className="icon_wsp" src="images/whatsapp.svg" alt="wsp"></img>
+      </a>
+
+      <footer className="footer">
+          <span className="footer_text">Powered by: Devfree</span>
       </footer>
     </div>
+    </React.Fragment>
+   
   )
 }
