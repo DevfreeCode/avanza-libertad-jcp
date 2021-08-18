@@ -4,7 +4,13 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
+/*
+    font-family: 'Montserrat', sans-serif;
+
+*/
 
 a {
   color: inherit;
@@ -13,4 +19,224 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --background-secondary: rgb(31, 78, 150);
+}
+
+
+.title{
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.title-center {
+  max-width: 40rem;
+  text-align: center;
+}
+
+.title-color {
+  color: white;
+}
+
+.subtitle{
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.subtitle-small {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.text{
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.text-color {
+  font-weight: 400;
+}
+
+.text-fonsize {
+  font-size: 1rem;
+}
+
+.presentation, .candidatos, .contact {
+  padding: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.header {
+  height: 5rem;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: var(--background-secondary);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.header_logo {
+  height: 3rem;
+}
+
+.header_list {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  list-style: none;
+}
+
+.header_list_content {
+  cursor: pointer;
+}
+
+.header_list_content:hover{
+  text-decoration: underline;
+}
+
+.header_list_content a{
+  text-decoration:none;
+}
+
+.header_list_content a:visited{
+  color: white;
+}
+
+.header_list_content a:active{
+  color: white;
+}
+
+.presentation {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.presentation_information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.presentation_img {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+.images {
+  height: 20rem;
+  border-radius: 50%;
+}
+
+.candidatos {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-secondary);
+}
+
+.candidatos_text{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.candidatos_container {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.candidatos_card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  border: 1px solid #d4d4d4;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #fffefd;
+  width: 12rem;
+  height: 16.5rem;
+}
+
+.img {
+  height: 10rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_text {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact_text_container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact_information {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.contact_sub_information {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.footer {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-secondary);
+}
+
+.footer_text {
+  color: white;
+}
+
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #0df053;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgb(123 121 121);
+  z-index: 100;
+}
+
+.btn-wsp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background: #fff;
+}
+
+@media (max-width: 600px) {
+  .header_logo{
+     display: none;
+  }
 }
