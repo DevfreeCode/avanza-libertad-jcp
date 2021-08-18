@@ -1,17 +1,18 @@
 import Head from 'next/head'
+import React from 'react'
 
 export default function Home() {
   return (
     <React.Fragment>
 
 <Head>
-        <title>Beto DIaz-Avanza Libertad</title>
+        <title>Beto Diaz-Avanza Libertad</title>
         <link rel="icon" type="ico" href="favicon.ico"/>
-        <meta name="description" content="Beto Diaz Precandidato a Consejal-Avanza Libertad-Soy un vecino de la localidad de José C. Paz, que al igual que todos los cuidadanos busca un cambio en el partido. Buen vecino, trabajador, humilde y voy a ser un buen representante de los paceños."></meta>
+        <meta name="description" content="Beto Diaz precandidato a concejal-Avanza Libertad-Soy un vecino de la localidad de José C. Paz, que al igual que todos los cuidadanos busca un cambio en el partido. Buen vecino, trabajador, humilde y voy a ser un buen representante de los paceños."></meta>
         <meta property="og:type" content="website"></meta>
         <meta property="og:url" content="https://avanza-libertad-jcp.vercel.app/" />
         <meta property="og:image" content="https://avanza-libertad-jcp.vercel.app/images/beto.png" />
-        <meta property="og:description" content="Beto Diaz Precandidato a Consejal-Avanza Libertad-Soy un vecino de la localidad de José C. Paz, que al igual que todos los cuidadanos busca un cambio en el partido. Buen vecino, trabajador, humilde y voy a ser un buen representante de los paceños." />
+        <meta property="og:description" content="Beto Diaz precandidato a concejal-Avanza Libertad-Soy un vecino de la localidad de José C. Paz, que al igual que todos los cuidadanos busca un cambio en el partido. Buen vecino, trabajador, humilde y voy a ser un buen representante de los paceños." />
       </Head>
 
     <div>
